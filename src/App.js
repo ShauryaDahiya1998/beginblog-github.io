@@ -6,7 +6,6 @@ function App() {
       <div> Hey Theren</div>
     </div>
   );
-  
 }
 
 export default App;
