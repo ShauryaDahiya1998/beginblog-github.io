@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/beginblog.github.io/static/css/main.073c9b0a.css",
+    "main.js": "/beginblog.github.io/static/js/main.886e9853.js",
+    "static/js/787.ec7ee001.chunk.js": "/beginblog.github.io/static/js/787.ec7ee001.chunk.js",
+    "index.html": "/beginblog.github.io/index.html",
+    "main.073c9b0a.css.map": "/beginblog.github.io/static/css/main.073c9b0a.css.map",
+    "main.886e9853.js.map": "/beginblog.github.io/static/js/main.886e9853.js.map",
+    "787.ec7ee001.chunk.js.map": "/beginblog.github.io/static/js/787.ec7ee001.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.886e9853.js"
+  ]
+}
