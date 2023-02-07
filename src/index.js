@@ -11,6 +11,7 @@ root.render(
   <React.StrictMode>
     <Header />
     <Mainpage />
+    {/* <App /> */}
   </React.StrictMode>
 );
 

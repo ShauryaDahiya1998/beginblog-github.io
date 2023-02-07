@@ -1,7 +1,7 @@
 {
   "name": "beginning",
   "version": "0.1.0",
-  "homepage": "https://ShauryaDahiya1998.github.io/beginblog.github.io",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",
