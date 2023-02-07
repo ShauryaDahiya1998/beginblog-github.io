@@ -9,10 +9,10 @@ import Mainpage from './components/Mainpage'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Header />
-    <Mainpage /> */}
+    <Header />
+    {/* <Mainpage /> */}
     
-    <App />
+    {/* <App /> */}
   </React.StrictMode>
 );
 
