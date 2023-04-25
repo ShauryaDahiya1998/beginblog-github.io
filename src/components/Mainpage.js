@@ -11,7 +11,7 @@ const Mainpage = () => {
             </div>
             <div style={styleSheet.lowerBox}>
                 <ReactTypingEffect style={styleSheet.lowerText} typingDelay = {3000} speed={100} eraseDelay={100000}
-                    text={"Shaurya's blog"}
+                    text={"CI/CD works."}
                 />
             </div>
         </div>
