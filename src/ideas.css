@@ -1,0 +1,65 @@
+.container {
+    height:100vh;
+    background-color: #2E3B55;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    flex-wrap: wrap; /* Optional: Allows items to wrap to a new line if needed */
+    justify-content: space-between; /* Adjust as per your desired alignment */
+    align-items: center; /* Adjust as per your desired alignment */
+  }
+
+  .formStyle {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  .formStyle label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .formStyle input[type="text"] {
+    padding: 8px;
+    width: 90%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .formStyle input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .formStyle input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .formStyle input[type="submit"]:focus {
+    outline: none;
+  }
+
+  .todos-container {
+    height:70vh;
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+    width: 90%;
+  }
+
+  .outerBox {
+    color: #ffffffdc;
+  }
+  
