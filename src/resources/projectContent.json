@@ -1,0 +1,12 @@
+{
+    "project_1": {
+        "description":"This project lets you differentiate between different speakers and provides live output of the same.",
+        "title": "Speaker Recognition",
+        "link":"https://github.com/ShauryaDahiya1998/speaker-classification"
+    },
+    "project_2": {
+        "description":"Let's find some habitable planets",
+        "title": "Nasa Jets",
+        "link":"https://github.com/ShauryaDahiya1998/Nasa-Project"
+    }
+}
