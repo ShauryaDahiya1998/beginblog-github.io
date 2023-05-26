@@ -17,6 +17,7 @@ const Header = () => {
             <Link to="/projects" style = {styleSheet.linkStyle}><Button color="inherit" style = {styleSheet.buttonStyle}>Projects</Button></Link>
             <Link to="/ideas" style = {styleSheet.linkStyle}><Button color="inherit" style = {styleSheet.buttonStyle}>Ideas</Button></Link>
             <Link to="/resume" style = {styleSheet.linkStyle}><Button color="inherit" style = {styleSheet.buttonStyle}>Resume</Button></Link>
+            <Link to="/articles" style = {styleSheet.linkStyle}><Button color="inherit" style = {styleSheet.buttonStyle}>Articles</Button></Link>
           </Toolbar>
         </AppBar>
       </Box>

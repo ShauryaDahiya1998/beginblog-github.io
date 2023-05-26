@@ -4,6 +4,7 @@ import About from './pages/About.js';
 import Projects from './pages/Projects.js';
 import Ideas from './pages/Ideas.js';
 import Resume from './pages/Resume.js';
+import Articles from './pages/Articles.js';
 
 function AppRouter() {
     return (
@@ -14,6 +15,7 @@ function AppRouter() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/ideas" element={<Ideas />} />
                 <Route path="/resume" element={<Resume />} />
+                <Route path="/articles" element={<Articles />} />
             </Routes>
         </Router>
     );
