@@ -2,7 +2,7 @@ import AppRouter from "./AppRouter";
 
 function App() {
   return (
-    <div >
+    <div>
       <AppRouter />
     </div>
   );
