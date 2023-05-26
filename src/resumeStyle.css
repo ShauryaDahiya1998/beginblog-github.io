@@ -4,3 +4,12 @@
 .content {
     color: #fffffff0
 }
+.tableEdu {
+    color: #fffffff0;
+    border: 1px solid #ffffff;
+    width: 900px;
+}
+.tabRow {
+    text-align: center;
+    border: 1px solid #ffffff;
+}
