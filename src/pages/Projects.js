@@ -24,12 +24,14 @@ const Projects = () => {
 const styleSheet = {
   container: {
     height: '100vh', // Set the container height to 100% of the viewport height
+    backgroundColor: '#2E3B55',
   },
   outerBox: {
     display: 'grid', // Use CSS Grid for layout
     gridTemplateColumns: 'repeat(3, 1fr)', // Create three columns of equal width
     gap: '20px', // Add some gap between the cards
     alignItems: 'center',
+    height:'90vh',
     backgroundColor: '#2E3B55',
     flexGrow: 1, // Allow the outer box to grow and occupy the remaining vertical space
     overflow: 'scroll',
