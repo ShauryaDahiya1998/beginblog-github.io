@@ -1,6 +1,6 @@
 {
     "project_1": {
-        "description":"This project lets you differentiate between different speakers and provides live output of the same.",
+        "description":"Differentiate between different speakers and get live output of the same",
         "title": "Speaker Recognition",
         "link":"https://github.com/ShauryaDahiya1998/speaker-classification"
     },
@@ -15,7 +15,7 @@
         "link":"https://github.com/ShauryaDahiya1998/facerecognitionbrain"
     },
     "project_4": {
-        "description":"Learn about some of the harder competitive programing projects and their solutions",
+        "description":"Learn about some of the harder competitive programing questions and their solutions",
         "title": "Competitive programing",
         "link":"https://github.com/ShauryaDahiya1998/CompetitiveProgramming"
     },
@@ -28,5 +28,10 @@
         "description":"Find out what is recursion through a blog",
         "title": "Recursion blog",
         "link":"https://beginblog-github-io.vercel.app"
+    }, 
+    "project_7": {
+        "description":"Your sentiments matter, let us anlyse them with bleeding edge ML!",
+        "title": "Sentiment analysis module",
+        "link":"https://github.com/ShauryaDahiya1998/Sentiment_Analysis_Module"
     } 
 }
