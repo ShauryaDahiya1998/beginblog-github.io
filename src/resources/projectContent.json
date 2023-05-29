@@ -8,5 +8,25 @@
         "description":"Let's find some habitable planets",
         "title": "Nasa Jets",
         "link":"https://github.com/ShauryaDahiya1998/Nasa-Project"
-    }
+    },
+    "project_3": {
+        "description":"Use ML to differentiate a face from millions of others",
+        "title": "Face recognition brain",
+        "link":"https://github.com/ShauryaDahiya1998/facerecognitionbrain"
+    },
+    "project_4": {
+        "description":"Learn about some of the harder competitive programing projects and their solutions",
+        "title": "Competitive programing",
+        "link":"https://github.com/ShauryaDahiya1998/CompetitiveProgramming"
+    },
+    "project_5": {
+        "description":"Simple way to find similarity between two texts without using any ML!",
+        "title": "Text similarity finder",
+        "link":"https://github.com/ShauryaDahiya1998/Text-Similarity-Finder"
+    },
+    "project_6": {
+        "description":"Find out what is recursion through a blog",
+        "title": "Recursion blog",
+        "link":"https://beginblog-github-io.vercel.app"
+    } 
 }
