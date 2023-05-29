@@ -4,11 +4,11 @@ import { useState, useEffect } from "react";
 import { collection, getDocs, addDoc } from "firebase/firestore";
 import '../ideas.css';
 
-
 const Ideas = () => {
 
     const [todos, setTodos] = useState([]);
     const [formData, setFormData] = useState("");
+    const [formTitle, setFormTitle] = useState("");
 
     const fetchPost = async () => {
         let querySnapshot = await getDocs(collection(db, "blogIdeas"))
@@ -30,8 +30,12 @@ const Ideas = () => {
         console.log("Updated values", todos);
     }, [todos]);
 
-    const handleChange = (event) => {
+    const handleContentChange = (event) => {
         setFormData(event.target.value);
+    }
+
+    const handleTitleChange = (event) => {
+        setFormTitle(event.target.value);
     }
 
     const handleSubmit = async (event) => {
@@ -39,10 +43,10 @@ const Ideas = () => {
         try {
             const docRef = await addDoc(collection(db, "blogIdeas"), {
               content: formData,
-              title: "Try Idea Save"  
+              title: formTitle  
             });
             console.log("Document written with ID: ", docRef.id);
-            setTodos([...todos, {content: formData, title: "Try Idea Save"}]);
+            setTodos([...todos, {content: formData, title: formTitle}]);
           } catch (e) {
             console.error("Error adding document: ", e);
           }
@@ -63,10 +67,14 @@ const Ideas = () => {
                     })}
                 </div>
                 <form className='formStyle' onSubmit={handleSubmit}>
-                    <label>
-                        Name:
-                        <input type="text" name="name" value={formData} onChange={handleChange}/>
-                    </label>
+                    <div className="formComp">
+                        <label>Title: </label>
+                        <input type="text" name="name" value={formTitle} onChange={handleTitleChange}/>
+                    </div>
+                    <div className="formComp">
+                        <label>Idea: </label>
+                        <textarea name="idea" value={formData} onChange={handleContentChange}/>
+                    </div>
                     <input type="submit" value="Submit" />
                 </form>
             </div>
