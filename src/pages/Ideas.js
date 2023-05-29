@@ -1,7 +1,7 @@
 import Header from "../components/Header.js";
 import {db} from "../firebase.js";
 import { useState, useEffect } from "react";
-import { collection, getDocs, addDoc } from "firebase/firestore";
+import { collection, getDocs, addDoc, deleteDoc, doc } from "firebase/firestore";
 import '../ideas.css';
 
 const Ideas = () => {
@@ -16,7 +16,7 @@ const Ideas = () => {
             const newData = querySnapshot.docs
                 .map((doc) => ({...doc.data(), id:doc.id }));
             setTodos(newData);
-            console.log(todos)
+            // console.log(todos)
         } catch (err) {
             console.log(err);
         }
@@ -38,6 +38,20 @@ const Ideas = () => {
         setFormTitle(event.target.value);
     }
 
+    const deleteItem = async (id) => {
+        console.log(id)
+        try {
+            // await db.collection("blogIdeas").doc(id).delete();
+            const docRef = doc(db, "blogIdeas", id);
+            deleteDoc(docRef)
+            setTodos(todos.filter((todo) => todo.id !== id));
+        } catch (err) {
+            console.log(err);
+        }
+        
+
+    }
+
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -45,7 +59,7 @@ const Ideas = () => {
               content: formData,
               title: formTitle  
             });
-            console.log("Document written with ID: ", docRef.id);
+            // console.log("Document written with ID: ", docRef.id);
             setTodos([...todos, {content: formData, title: formTitle}]);
           } catch (e) {
             console.error("Error adding document: ", e);
@@ -60,8 +74,9 @@ const Ideas = () => {
                     {todos.map((todo) => {
                     return (
                         <div key={todo.id} className='outerBox'> 
-                        <h1>{todo.title}</h1>
-                        <p>{todo.content}</p>
+                            <h1 className="gridItem1">{todo.title}</h1>
+                            <p className="gridItem2">{todo.content}</p>
+                            <p className="gridItem3" onClick={() => deleteItem(todo.id)}>❌</p>
                         </div>
                     )
                     })}
