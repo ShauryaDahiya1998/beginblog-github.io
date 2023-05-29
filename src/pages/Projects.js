@@ -8,6 +8,7 @@ import facerecog from '../resources/facerecog.png';
 import competitive from '../resources/competitive.jpeg';
 import textSimilar from '../resources/textSimilar.webp';
 import recursion from '../resources/recursion.png';
+import sentimentAnalysis2 from '../resources/sentimentAnalysis2.jpeg';
 
 const Projects = () => {
   return (
@@ -20,6 +21,7 @@ const Projects = () => {
         <ProjectCard projectImage={competitive} projectDescription={descriptions.project_4} />
         <ProjectCard projectImage={textSimilar} projectDescription={descriptions.project_5} />
         <ProjectCard projectImage={recursion} projectDescription={descriptions.project_6} />
+        <ProjectCard projectImage={sentimentAnalysis2} projectDescription={descriptions.project_7} />
       </div>
     </div>
   );
@@ -35,7 +37,6 @@ const styleSheet = {
     gridTemplateColumns: 'repeat(3, 1fr)', // Create three columns of equal width
     gap: '20px', // Add some gap between the cards
     alignItems: 'center',
-    height:'90vh',
     backgroundColor: '#2E3B55',
     flexGrow: 1, // Allow the outer box to grow and occupy the remaining vertical space
     overflow: 'scroll',

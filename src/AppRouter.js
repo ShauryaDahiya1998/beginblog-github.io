@@ -5,6 +5,7 @@ import Projects from './pages/Projects.js';
 import Ideas from './pages/Ideas.js';
 import Resume from './pages/Resume.js';
 import Articles from './pages/Articles.js';
+import BlogArticle from './pages/BlogArticle.js';
 
 function AppRouter() {
     return (
@@ -16,6 +17,7 @@ function AppRouter() {
                 <Route path="/ideas" element={<Ideas />} />
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/articles" element={<Articles />} />
+                <Route path="/articles/:id" element={<BlogArticle />} />
             </Routes>
         </Router>
     );
