@@ -5,6 +5,7 @@ import { collection, getDocs } from "firebase/firestore";
 import {db} from "../firebase.js";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import "../articles.css";
 
 
 const Ideas = () => {
@@ -34,7 +35,7 @@ const Ideas = () => {
 
 
     return (
-        <div>
+        <div className="container">
             <Header />
             {articles.map((article) => (    
                 <Link to={article.id} style={{ textDecoration: 'none', color: 'inherit' }}>
