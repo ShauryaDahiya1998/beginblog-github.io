@@ -9,6 +9,7 @@ import competitive from '../resources/competitive.jpeg';
 import textSimilar from '../resources/textSimilar.webp';
 import recursion from '../resources/recursion.png';
 import sentimentAnalysis2 from '../resources/sentimentAnalysis2.jpeg';
+import deepLink from '../resources/deepLink.webp';
 
 const Projects = () => {
   return (
@@ -22,6 +23,7 @@ const Projects = () => {
         <ProjectCard projectImage={textSimilar} projectDescription={descriptions.project_5} />
         <ProjectCard projectImage={recursion} projectDescription={descriptions.project_6} />
         <ProjectCard projectImage={sentimentAnalysis2} projectDescription={descriptions.project_7} />
+        <ProjectCard projectImage={deepLink} projectDescription={descriptions.project_8} />
       </div>
     </div>
   );
