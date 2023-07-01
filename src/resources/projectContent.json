@@ -33,5 +33,10 @@
         "description":"Your sentiments matter, let us anlyse them with bleeding edge ML!",
         "title": "Sentiment analysis module",
         "link":"https://github.com/ShauryaDahiya1998/Sentiment_Analysis_Module"
+    },
+    "project_8": {
+        "description":"Need an api to redirect to a deep link of your ios app? This is the solution",
+        "title": "Deep Link Redirector API",
+        "link":"https://github.com/ShauryaDahiya1998/deep-link-redirector"
     } 
 }
