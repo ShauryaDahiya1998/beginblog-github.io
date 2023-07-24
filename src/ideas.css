@@ -107,5 +107,59 @@
 
   .formComp {
     margin:5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .blur-div{
+    filter: blur(5px);
+  }
+
+  .formLock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+    margin: 0 auto;
   }
   
+  .formLock div {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .formLock button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5f45b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .formLock button:hover {
+    background-color: #0056b3;
+  }
+  
+  .signOutButton {
+    display: flex;
+    width:20%;
+    background-color: #fff;
+    color: #5f45b6;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signOutButton:hover {
+    background-color: #7e6cbc;
+    color:#fff
+  }
