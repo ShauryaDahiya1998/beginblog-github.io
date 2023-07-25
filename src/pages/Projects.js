@@ -10,6 +10,7 @@ import textSimilar from '../resources/textSimilar.webp';
 import recursion from '../resources/recursion.png';
 import sentimentAnalysis2 from '../resources/sentimentAnalysis2.jpeg';
 import deepLink from '../resources/deepLink.webp';
+import FooterComp from '../components/FooterComp';
 
 const Projects = () => {
   return (
@@ -25,6 +26,7 @@ const Projects = () => {
         <ProjectCard projectImage={sentimentAnalysis2} projectDescription={descriptions.project_7} />
         <ProjectCard projectImage={deepLink} projectDescription={descriptions.project_8} />
       </div>
+      <FooterComp/>
     </div>
   );
 };
