@@ -41,7 +41,7 @@ const About = () => {
                         <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="June, 2021 - October, 2022"
-                        iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FElectricPe-1636636771886.webp?alt=media&token=d9f1ab87-ffd4-4bec-93af-153633054baf) center / cover no-repeat', color: '#fff' }}
+                        iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FelectricPe.jpeg?alt=media&token=43dce229-84e8-4baa-97d2-b25804a2a86c) center / cover no-repeat', color: '#fff' }}
                         // icon={<WorkIcon />}
                         >
                             <h3 className="vertical-timeline-element-title textColor2">Software Developer</h3>
