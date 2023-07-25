@@ -1,0 +1,21 @@
+.footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s;
+  }
+  
+  .footer-icon:hover {
+    color: #0077b5; /* LinkedIn blue color */
+  }

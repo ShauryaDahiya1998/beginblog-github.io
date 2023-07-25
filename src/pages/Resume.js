@@ -1,3 +1,4 @@
+import FooterComp from "../components/FooterComp.js";
 import Header from "../components/Header.js";
 import PdfViewer from "../components/PdfViewer.js";
 import "../resume.css"
@@ -14,6 +15,7 @@ const Resume = () => {
                 <PdfViewer/>
                 <button className="buttonClass" onClick={handleRedirect}>Download</button>
             </div>
+            <FooterComp />
         </div>
     )
 }

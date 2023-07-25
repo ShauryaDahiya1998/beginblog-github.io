@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../about.css'
+import FooterComp from "../components/FooterComp.js";
 
 const About = () => {
 
@@ -147,6 +148,11 @@ const About = () => {
                         </VerticalTimelineElement>
                         {/* Add more VerticalTimelineElement for your other work experiences */}
                     </VerticalTimeline>
+                    </Col>
+                </Row>
+                <Row className="mt-5">
+                    <Col md={12}>
+                        <FooterComp />
                     </Col>
                 </Row>
             </Container>

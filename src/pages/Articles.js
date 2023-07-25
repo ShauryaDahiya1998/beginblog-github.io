@@ -6,6 +6,7 @@ import {db} from "../firebase.js";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../articles.css";
+import FooterComp from "../components/FooterComp.js";
 
 
 const Ideas = () => {
@@ -35,13 +36,17 @@ const Ideas = () => {
 
 
     return (
-        <div className="container">
+        <div>
             <Header />
-            {articles.map((article) => (    
-                <Link to={article.id} style={{ textDecoration: 'none', color: 'inherit' }}>
-                    <ArticleCard title={article.title} description={article.description} imageLink={article.imageLink}/>
-                </Link>
-            ))}
+            <div className="container">
+                {articles.map((article) => (    
+                    <Link to={article.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+                        <ArticleCard title={article.title} description={article.description} imageLink={article.imageLink}/>
+                    </Link>
+                ))}
+                <FooterComp />
+            </div>
+            
         </div>
     )
 }
