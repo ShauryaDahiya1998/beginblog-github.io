@@ -17,3 +17,72 @@ body {
 .textColor3{
     color: #373333
 }
+
+.margins{
+    margin: 10px
+}
+
+/* Style for the profile photo */
+.profile-photo {
+    max-width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for the introduction section */
+.intro-section {
+    margin:10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Adjust margins */
+.mt-5 {
+    margin-top: 2rem;
+}
+
+/* Adjust text color and other styles as needed */
+.textColor {
+    color: #f4e7e7;
+}
+
+.innerDivOne{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.placeCenter {
+    display:flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.aboutMeText {
+    font-size: 20px;
+}
+
+.custom-card {
+    background-color: #696161;
+    color: #fff; /* Set the text color to white to ensure readability */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.custom-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.custom-card .card-text {
+    font-size: 1rem;
+}
+
+.cardClass {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

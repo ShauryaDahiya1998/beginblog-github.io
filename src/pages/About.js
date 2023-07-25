@@ -1,33 +1,42 @@
 import Header from "../components/Header.js";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../about.css'
 
 const About = () => {
+
+    const cardsContent = ["C++", "Javascript", "AWS", "ReactJs", "NextJs", "Microservices", "Couchbase"]
     return (
         <>
             <Header />
-            <Container className="outerContainer textColor">
-                <Row>
-                    <Col md={12}>
-                    <h1>About Me</h1>
-                    <p>Your brief goes here...</p>
+            <Container className="outerContainer textColor margins">
+                <Row className="intro-section d-flex">
+                    <Col md={4} className="placeCenter">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FofficialPic.jpeg?alt=media&token=f4393960-9640-49c1-af55-b89fe2d3929c" alt="Shaurya Dahiya" className="profile-photo" />
+                    </Col>
+                    <Col md={8}>
+                        {/* <h1>About me</h1> */}
+                        <p className="aboutMeText">Coding enthusiast with a passion for real-world problem-solving. I believe in utility over elegance. Always open for new and interesting opportunities. Here's a brief about me.</p>
                     </Col>
                 </Row>
 
                 <Row className="mt-5">
                     <Col md={12}>
-                    <h2>Experience</h2>
+                    <h2 className="placeCenter">What I've been upto</h2>
                     <VerticalTimeline>
                         <VerticalTimelineElement
                         className="vertical-timeline-element--education"
                         date="October, 2022 - present"
-                        iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FnirvaImage.png?alt=media&token=50b256fe-b158-4fbb-b109-92c338766ea6) center / cover no-repeat', color: '#fff' }}
+                        iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FnirvaImage.png?alt=media&token=50b256fe-b158-4fbb-b109-92c338766ea6) center / cover no-repeat', color: '#e6b3b3' }}
                         >
                             <h3 className="vertical-timeline-element-title textColor2">Software Developer</h3>
                             <h4 className="vertical-timeline-element-subtitle textColor2">Nirva health</h4>
-                            <p className="textColor3">Worked as a full stack Software developer. Built the entire internal tool for the app using NextJS, AWS Amplify, Retool. Increased Overall Team efficiency by more than 150%</p>
+                            <ul className="textColor3">
+                                <li>Worked as a <b>full stack</b> Software developer.</li>
+                                <li>Built the entire internal tool for the app using NextJS, AWS Amplify, Retool.</li>
+                                <li>Increased Overall Team efficiency by more than 150%</li>
+                            </ul>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -66,14 +75,24 @@ const About = () => {
 
                 <Row className="mt-5">
                     <Col md={12}>
-                    <h2>Skills</h2>
-                    <p>Your skills go here...</p>
+                    <h2 className="placeCenter">Here's what I can do</h2>
+                    <div className="cardClass">
+                        {cardsContent.map((card, index) => {
+                            return (
+                                <Card className="mb-4 custom-card" key={index}>
+                                    <Card.Body>
+                                        <Card.Title>{card}</Card.Title>
+                                    </Card.Body>
+                                </Card>
+                            )
+                        })}
+                    </div>
                     </Col>
                 </Row>
 
                 <Row className="mt-5">
                     <Col md={12}>
-                    <h2>Education</h2>
+                    <h2 className="placeCenter">All about my education</h2>
                     <VerticalTimeline>
                         <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -94,6 +113,17 @@ const About = () => {
                             <h3 className="vertical-timeline-element-title textColor2">Computer Engineering - Information Technology (B.Tech)</h3>
                             <h4 className="vertical-timeline-element-subtitle textColor2">National Institute of Technology, Kurukshetra</h4>
                             <p className="textColor3">9.4 CGPA</p>
+                            <ul className="textColor3">
+                                <li >Design and analysis of algorithms</li>
+                                <li>Operating systems</li>
+                                <li>Computer networks</li>
+                                <li>Database management systems</li>
+                                <li>Software engineering</li>
+                                <li>Computer architecture</li>
+                                <li>Compiler design</li>
+                                <li>Machine learning</li>
+
+                            </ul>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                         className="vertical-timeline-element--work"
