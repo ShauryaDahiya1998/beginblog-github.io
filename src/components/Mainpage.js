@@ -22,7 +22,7 @@ const styleSheet = {
     mainBox: {
         height: "700px",
         display: "flex",
-        backgroundColor: "#200d4a",
+        backgroundColor: "#2E3B55",
         justifyContent: 'center',
         alignItems: "center"
     },
