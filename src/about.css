@@ -1,7 +1,6 @@
-.container {
-    height:100vh;
+body {
     background-color: #2E3B55;
-}
+  }
 
 .outerContainer{
     margin-top: 0 !important;
@@ -13,4 +12,8 @@
 
 .textColor2{
     color:#5f45b6;
+}
+
+.textColor3{
+    color: #373333
 }
