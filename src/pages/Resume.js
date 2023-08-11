@@ -6,7 +6,7 @@ import "../resume.css"
 const Resume = () => {
     const handleRedirect = () => {
         // Replace 'https://example.com' with the desired link
-        window.open('https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FShaurya_Resume_UPenn.pdf?alt=media&token=f3f2d7a0-b3e5-4a52-aedf-3035863ac04e', '_blank');
+        window.open('https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FShaurya_Resume_PDF.pdf?alt=media&token=8fc3eb2b-44dd-4aeb-ac69-54fc7b637706', '_blank');
       };
     return (
         <div>

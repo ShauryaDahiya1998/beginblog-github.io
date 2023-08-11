@@ -6,12 +6,12 @@ const Mainpage = () => {
         <div style={styleSheet.outerBox}>
             <div style={styleSheet.mainBox}>
                 <ReactTypingEffect style={styleSheet.centreText} typingDelay = {500} speed={100} eraseSpeed={50} eraseDelay={2000}
-                    text={["Good, you're here!", "Welcome! Let's dive deep"]}
+                    text={["Welcome to the blog!", "Let's dive deep"]}
                 />
             </div>
             <div style={styleSheet.lowerBox}>
                 <ReactTypingEffect style={styleSheet.lowerText} typingDelay = {3000} speed={100} eraseDelay={100000}
-                    text={"CI/CD works."}
+                    text={"Concept to Creation"}
                 />
             </div>
         </div>

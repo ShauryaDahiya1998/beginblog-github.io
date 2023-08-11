@@ -7,7 +7,7 @@ import FooterComp from "../components/FooterComp.js";
 
 const About = () => {
 
-    const cardsContent = ["C++", "Javascript", "AWS", "ReactJs", "NextJs", "Microservices", "Couchbase"]
+    const cardsContent = ["C","C++", "Javascript", "NodeJs", "ReactJs", "NextJs", "AWS Amplify", "AWS Complete suit", "Firebase", "DynamoDb", "Distributed Systems"]
     return (
         <>
             <Header />
@@ -32,11 +32,13 @@ const About = () => {
                         iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FnirvaImage.png?alt=media&token=50b256fe-b158-4fbb-b109-92c338766ea6) center / cover no-repeat', color: '#e6b3b3' }}
                         >
                             <h3 className="vertical-timeline-element-title textColor2">Software Developer</h3>
-                            <h4 className="vertical-timeline-element-subtitle textColor2">Nirva health</h4>
+                            <h4 className="vertical-timeline-element-subtitle textColor2">Nirva health (October, 2022 - July, 2023)</h4>
                             <ul className="textColor3">
                                 <li>Worked as a <b>full stack</b> Software developer.</li>
-                                <li>Built the entire internal tool for the app using NextJS, AWS Amplify, Retool.</li>
-                                <li>Increased Overall Team efficiency by more than 150%</li>
+                                <li>Switched the backend from <b>REST Api to GraphQl</b>, set up the schema using AWS amplify reducing turnaround time by about <b>25%</b></li>
+                                <li>Created <b>tools for internal team management</b> using <b>NextJs and Retool</b> increasing the team efficiency by almost <b>50%</b></li>
+                                <li>Reduced the net buffering time of streaming videos by <b>15%</b> by setting up CDN and video convertor service</li>
+                                <li>Leveraged AI to help health coaches in medical diagnosis and user diet creation</li>
                             </ul>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
@@ -46,8 +48,12 @@ const About = () => {
                         // icon={<WorkIcon />}
                         >
                             <h3 className="vertical-timeline-element-title textColor2">Software Developer</h3>
-                            <h4 className="vertical-timeline-element-subtitle textColor2">Electric Pe</h4>
-                            <p className="textColor3">Designed the backend for the mobile app to handle 10x the current tarffic. Implemented schema to increse turn around time by more than 50%.</p>
+                            <h4 className="vertical-timeline-element-subtitle textColor2">Electric Pe (July, 2021 - October, 2022)</h4>
+                            <ul className="textColor3">
+                                <li>Designed the backend for the mobile app to handle <b>10x</b> the current tarffic.</li>
+                                <li>Worked as backend engineer and developed app wallet and user behavior tracking features for the app</li>
+                                <li>Rebuit the UI and backend of the user profile page, <b>reducing its latency by 100ms</b></li>
+                            </ul>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -56,8 +62,12 @@ const About = () => {
                         // icon={<WorkIcon />}
                         >
                             <h3 className="vertical-timeline-element-title textColor2">Software Developer Intern</h3>
-                            <h4 className="vertical-timeline-element-subtitle textColor2">Cvent India</h4>
-                            <p className="textColor3">Worked as a software developer with the core development team of the Survey product of Cvent. Improved the concurrency in cvent survey forms. Developed 20+ new features to improve the product feel and performance.</p>
+                            <h4 className="vertical-timeline-element-subtitle textColor2">Cvent India (January, 2020 - June, 2020)</h4>
+                            <ul className="textColor3">
+                                <li>Worked as a software developer with the core development team of the Survey product of Cvent.</li>
+                                <li>Project: Backend and UI development of Cvent - Survey Product using Java Dropwizard framework and ReactJs</li>
+                                <li>Build Java Microservice to handle backend data including analytics, auto-population while maintaining consistency</li>
+                            </ul>       
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                         className="vertical-timeline-element--education"
@@ -101,9 +111,9 @@ const About = () => {
                         iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FupennImage.png?alt=media&token=f1aee4d6-fc00-42ff-8ce7-c090496ff8ef) center / cover no-repeat', color: '#fff' }}
                         // icon={<SchoolIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title textColor2">Computer and Information Science (Masters)</h3>
+                            <h3 className="vertical-timeline-element-title textColor2">Computer and Information Science (Masters) (2025)</h3>
                             <h4 className="vertical-timeline-element-subtitle textColor2">University of Pennsylvania (SEAS)</h4>
-                            <p className="textColor3">Description</p>
+                            <p className="textColor3">Graduating - May 2025 </p>
                         </VerticalTimelineElement>
                         <VerticalTimelineElement
                         className="vertical-timeline-element--work"
@@ -111,7 +121,7 @@ const About = () => {
                         iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2Fnitkkk.png?alt=media&token=2999aa0e-8d1f-43e8-a81b-5aa5e3efaa8a) center / cover no-repeat', color: '#fff' }}
                         // icon={<SchoolIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title textColor2">Computer Engineering - Information Technology (B.Tech)</h3>
+                            <h3 className="vertical-timeline-element-title textColor2">Computer Engineering - Information Technology (B.Tech) (2021)</h3>
                             <h4 className="vertical-timeline-element-subtitle textColor2">National Institute of Technology, Kurukshetra</h4>
                             <p className="textColor3">9.4 CGPA</p>
                             <ul className="textColor3">
@@ -132,7 +142,7 @@ const About = () => {
                         iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FdpsLogo.png?alt=media&token=1bea2e8c-d767-48e2-8b5a-a944d5b74d1f) center / cover no-repeat', color: '#fff' }}
                         // icon={<SchoolIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title textColor2">CBSE Class 12th</h3>
+                            <h3 className="vertical-timeline-element-title textColor2">CBSE Class 12th (2016)</h3>
                             <h4 className="vertical-timeline-element-subtitle textColor2">Delhi Public School, Ambala</h4>
                             <p className="textColor3">91.4%</p>
                         </VerticalTimelineElement>
@@ -142,7 +152,7 @@ const About = () => {
                         iconStyle={{ background: 'url(https://firebasestorage.googleapis.com/v0/b/blogsupport.appspot.com/o/timeline_images%2FdpsLogo.png?alt=media&token=1bea2e8c-d767-48e2-8b5a-a944d5b74d1f) center / cover no-repeat', color: '#fff' }}
                         // icon={<SchoolIcon />}
                         >
-                            <h3 className="vertical-timeline-element-title textColor2">CBSE Class 10th</h3>
+                            <h3 className="vertical-timeline-element-title textColor2">CBSE Class 10th (2014)</h3>
                             <h4 className="vertical-timeline-element-subtitle textColor2">Delhi Public School, Karnal</h4>
                             <p className="textColor3">10 CGPA</p>
                         </VerticalTimelineElement>
