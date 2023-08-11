@@ -82,7 +82,8 @@ body {
 }
 
 .cardClass {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Creates a grid with 6 equal columns */
+    gap: 20px;  /* Space between grid items */
     width: 100%;
 }
